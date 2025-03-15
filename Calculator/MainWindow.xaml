@@ -6,6 +6,16 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="Calculator" Height="900" Width="600">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="HotPink"/>
+            <Setter Property="FontSize" Value="50"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Command" Value="{Binding Path=buttonPressedCommand}"/>
+        </Style>
+        
+    </Window.Resources>
     <Grid>
         
     </Grid>

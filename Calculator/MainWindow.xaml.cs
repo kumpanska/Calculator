@@ -75,10 +75,10 @@ namespace Calculator
                 case '-':
                     res = first - second;
                     break;
-                case '×':
+                case '*':
                     res = first * second;
                     break;
-                case '÷':
+                case '/':
                     if (second != 0)
                     {
                         res = first / second;
@@ -93,13 +93,21 @@ namespace Calculator
             Result.Text = res.ToString();
 
         }
-
+      
         private void ClearElementButton_Click(object sender, RoutedEventArgs e)
         {
             if (Result.Text.Length > 0)
             {
                 Result.Text = Result.Text.Remove(Result.Text.Length-1);
             }
+        }
+
+        private void ClearAllButton_Click(object sender, RoutedEventArgs e)
+        {
+            Result.Clear();
+            first = 0;
+            second = 0;
+            operation = '\0';
         }
     }
 }

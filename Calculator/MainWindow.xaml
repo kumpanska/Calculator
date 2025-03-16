@@ -56,14 +56,14 @@
 
             </Grid.ColumnDefinitions>
             <Button x:Name="UndoButton" Grid.Column="1" Grid.Row="1" Content="CE" Margin="-4,0,0,0" CommandParameter="CE"/>
-            <Button x:Name="ClearAllButton" Grid.Column="3" Grid.Row="1" Content="C" Margin="-4,0,0,0" CommandParameter="C"/>
+            <Button x:Name="ClearAllButton" Grid.Column="3" Grid.Row="1" Content="C" Margin="-4,0,0,0" CommandParameter="C" Click="ClearAllButton_Click"/>
             <Button x:Name="ClearElementButton" Grid.Column="5" Grid.Row="1" Content="←" Margin="-4,0,0,0" CommandParameter="BackSpace" Click="ClearElementButton_Click"/>
-            <Button x:Name="DivideButton" Grid.Column="7" Grid.Row="1" Content="÷" Margin="-4,0,0,0" CommandParameter="/" Click="DivideButton_Click"/>
+            <Button x:Name="DivideButton" Grid.Column="7" Grid.Row="1" Content="/" Margin="-4,0,0,0" CommandParameter="/" Click="DivideButton_Click"/>
 
             <Button Grid.Column="1" Grid.Row="3" Content="7" Margin="-4,0,0,0" CommandParameter="7" Click="Button_Click"/>
             <Button Grid.Column="3" Grid.Row="3" Content="8" Margin="-4,0,0,0" CommandParameter="8" Click="Button_Click"/>
             <Button Grid.Column="5" Grid.Row="3" Content="9" Margin="-4,0,0,0" CommandParameter="9" Click="Button_Click"/>
-            <Button x:Name="MultiplyButton" Grid.Column="6" Grid.Row="3" Content="×" Margin="4,0,0,0" CommandParameter="*" Grid.ColumnSpan="2" Height="76" VerticalAlignment="Center" Click="MultiplyButton_Click"/>
+            <Button x:Name="MultiplyButton" Grid.Column="6" Grid.Row="3" Content="*" Margin="4,0,0,0" CommandParameter="*" Grid.ColumnSpan="2" Height="76" VerticalAlignment="Center" Click="MultiplyButton_Click"/>
 
             <Button Grid.Column="1" Grid.Row="5" Content="4" Margin="-4,0,0,0" CommandParameter="4" Click="Button_Click"/>
             <Button Grid.Column="3" Grid.Row="5" Content="5" Margin="-4,0,0,0" CommandParameter="5" Click="Button_Click"/>

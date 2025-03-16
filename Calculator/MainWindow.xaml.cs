@@ -94,5 +94,12 @@ namespace Calculator
 
         }
 
+        private void ClearElementButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Result.Text.Length > 0)
+            {
+                Result.Text = Result.Text.Remove(Result.Text.Length-1);
+            }
+        }
     }
 }

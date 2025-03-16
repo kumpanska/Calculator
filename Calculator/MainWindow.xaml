@@ -57,7 +57,7 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="UndoButton" Grid.Column="1" Grid.Row="1" Content="CE" Margin="-4,0,0,0" CommandParameter="CE"/>
             <Button x:Name="ClearAllButton" Grid.Column="3" Grid.Row="1" Content="C" Margin="-4,0,0,0" CommandParameter="C"/>
-            <Button x:Name="ClearElementButton" Grid.Column="5" Grid.Row="1" Content="←" Margin="-4,0,0,0" CommandParameter="BackSpace"/>
+            <Button x:Name="ClearElementButton" Grid.Column="5" Grid.Row="1" Content="←" Margin="-4,0,0,0" CommandParameter="BackSpace" Click="ClearElementButton_Click"/>
             <Button x:Name="DivideButton" Grid.Column="7" Grid.Row="1" Content="÷" Margin="-4,0,0,0" CommandParameter="/" Click="DivideButton_Click"/>
 
             <Button Grid.Column="1" Grid.Row="3" Content="7" Margin="-4,0,0,0" CommandParameter="7" Click="Button_Click"/>
@@ -77,7 +77,7 @@
 
             <Button Grid.Column="1" Grid.Row="9" Content="00" Margin="-4,0,0,0" CommandParameter="00" Click="Button_Click"/>
             <Button Grid.Column="3" Grid.Row="9" Content="0" Margin="-4,0,0,0" CommandParameter="0" Click="Button_Click"/>
-            <Button x:Name="DotButton" Grid.Column="5" Grid.Row="9" Content="." Margin="-4,0,0,0" CommandParameter="."/>
+            <Button x:Name="CommaButton" Grid.Column="5" Grid.Row="9" Content="," Margin="-4,0,0,0" CommandParameter="," Click="Button_Click"/>
             <Button x:Name="EqualsButton" Grid.Column="7" Grid.Row="9" Content="=" Margin="-4,0,0,0" CommandParameter="=" Click="EqualsButton_Click"/>
 
         </Grid>

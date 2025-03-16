@@ -25,21 +25,65 @@ namespace Calculator
         {
             InitializeComponent();
         }
-        double first;
-        double second;
+        int first;
+        int second;
         char operation;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
             Result.Text += btn.Content.ToString();
-            second = Convert.ToDouble(Result.Text);
+            second = Convert.ToInt32(Result.Text);
         }
 
         private void DivideButton_Click(object sender, RoutedEventArgs e)
         {
-            first = Convert.ToDouble(Result.Text);
+            first = Convert.ToInt32(Result.Text);
             operation = '÷';
             Result.Clear();
+        }
+
+        private void MultiplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            first = Convert.ToInt32(Result.Text);
+            operation = '×';
+            Result.Clear();
+        }
+
+        private void SubstractButton_Click(object sender, RoutedEventArgs e)
+        {
+            first = Convert.ToInt32(Result.Text);
+            operation = '-';
+            Result.Clear();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            first = Convert.ToInt32(Result.Text);
+            operation = '+';
+            Result.Clear();
+        }
+
+        private void EqualsButton_Click(object sender, RoutedEventArgs e)
+        {
+            second = Convert.ToInt32(Result.Text);
+            double res = 0;
+            switch (operation)
+            {
+                case '+':
+                    res = first + second;
+                    break;
+                case '-':
+                    res = first - second;
+                    break;
+                case '×':
+                    res = first * second;
+                    break;
+                case '÷':
+                    res = first / second;
+                    break;
+            }
+            Result.Text = res.ToString();
+
         }
     }
 }
